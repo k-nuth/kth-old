@@ -1,4 +1,4 @@
-# Copyright (c) 2016-2023 Knuth Project developers.
+# Copyright (c) 2016-2024 Knuth Project developers.
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -77,32 +77,19 @@ class KnuthConan(ConanFile):
     # package_files = "build/lkth-core.a"
     # build_policy = "missing"
 
-    # def requirements(self):
-    #     self.requires("boost/1.82.0")
-    #     self.requires("lmdb/0.9.31")
-    #     self.requires("fmt/8.1.1")
-    #     self.requires("spdlog/1.10.0")
-    #     self.requires("zlib/1.2.13")
-    #     self.requires("algorithm/0.1.239@tao/stable")
-
-    #     if self.settings.os == "Linux" or self.settings.os == "Macos":
-    #         self.requires("gmp/6.2.1")
-    #     if self.options.currency == "LTC":
-    #          self.requires("OpenSSL/1.0.2l@conan/stable")
-
     def build_requirements(self):
         if self.options.tests:
             self.test_requires("catch2/3.6.0")
 
     def requirements(self):
         # self.requires("secp256k1/0.16.0", transitive_headers=True, transitive_libs=True)
-        self.requires("boost/1.85.0", transitive_headers=True, transitive_libs=True)
+        self.requires("boost/1.86.0", transitive_headers=True, transitive_libs=True)
         self.requires("fmt/10.2.1", transitive_headers=True, transitive_libs=True)
         self.requires("spdlog/1.14.1", transitive_headers=True, transitive_libs=True)
         self.requires("lmdb/0.9.32", transitive_headers=True, transitive_libs=True)
         self.requires("gmp/6.3.0", transitive_headers=True, transitive_libs=True)
-        self.requires("expected-lite/0.6.3", transitive_headers=True, transitive_libs=True)
-        self.requires("ctre/3.8.1", transitive_headers=True, transitive_libs=True)
+        self.requires("expected-lite/0.8.0", transitive_headers=True, transitive_libs=True)
+        self.requires("ctre/3.9.0", transitive_headers=True, transitive_libs=True)
 
         # self.requires("unordered/cci.20230612", transitive_headers=True, transitive_libs=True)
 

@@ -1,4 +1,4 @@
-# Copyright (c) 2016-2023 Knuth Project developers.
+# Copyright (c) 2016-2024 Knuth Project developers.
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -42,13 +42,13 @@ option(ENABLE_SHARED_NODE_CINT "" ON)
 
 set(WITH_BIGNUM "no" CACHE STRING "Specify Bignum Implementation (gmp|no|auto).")
 set(ENABLE_POSITION_INDEPENDENT_CODE ON)
-set(WITH_CONSOLE OFF)
+# set(WITH_CONSOLE OFF)
 set(WITH_LOCAL_MINING OFF)
 set(ENABLE_TEST OFF)
 set(ENABLE_TESTS OFF)
 set(ENABLE_MODULE_RECOVERY ON)
 set(WITH_TOOLS OFF)
-set(WITH_TESTS OFF)
+# set(WITH_TESTS OFF)
 set(WITH_EXAMPLES OFF)
 set(ENABLE_SHARED OFF)
 set(ENABLE_SHARED_NODE_CINT ON)
@@ -69,19 +69,19 @@ find_package(gmp REQUIRED)
 add_subdirectory(secp256k1)
 add_subdirectory(infrastructure)
 add_subdirectory(domain)
-add_subdirectory(consensus)
-add_subdirectory(network)
-add_subdirectory(database)
-add_subdirectory(blockchain)
-add_subdirectory(node)
+# add_subdirectory(consensus)
+# add_subdirectory(network)
+# add_subdirectory(database)
+# add_subdirectory(blockchain)
+# add_subdirectory(node)
 
-if (BUILD_NODE_EXE)
-    add_subdirectory(node-exe)
-endif()
+# if (BUILD_NODE_EXE)
+#     add_subdirectory(node-exe)
+# endif()
 
-if (BUILD_C_API)
-    add_subdirectory(c-api)
-endif()
+# if (BUILD_C_API)
+#     add_subdirectory(c-api)
+# endif()
 
 if (WITH_TESTS)
   enable_testing()
