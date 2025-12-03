@@ -8,7 +8,7 @@ It is no longer under active development.
 
 Knuth development continues in the new monorepo, which replaces this project and concentrates all current work:
 
-👉 **Active repository:** https://github.com/k-nuth/kth
+👉 **Active repository:** https://github.com/k-nuth/kth-mono
 
 We recommend using and following that repository for the latest updates, releases, and documentation.
 
