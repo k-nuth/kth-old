@@ -1,6 +1,19 @@
 <!-- <a target="_blank" href="http://semver.org">![Version][badge.version]</a> -->
 <!-- <a target="_blank" href="https://cirrus-ci.com/github/k-nuth/node-exe">![Build Status][badge.Cirrus]</a> -->
 
+## ⚠️ Project Status: Archived / Deprecated
+
+**This repository is kept only for historical purposes and because it contains open Issues that we will still be addressing.**  
+It is no longer under active development.
+
+Knuth development continues in the new monorepo, which replaces this project and concentrates all current work:
+
+👉 **Active repository:** https://github.com/k-nuth/kth
+
+We recommend using and following that repository for the latest updates, releases, and documentation.
+
+---
+
 # knuth <a target="_blank" href="https://github.com/k-nuth/node-exe/releases">![Github Releases][badge.release]</a> <a target="_blank" href="https://github.com/k-nuth/node-exe/actions">![Build status][badge.GithubActions]</a> <a href="#">![CPP][badge.cpp]</a> <a target="_blank" href="https://t.me/knuth_cash">![Telegram][badge.telegram]</a> <a target="_blank" href="https://k-nuth.slack.com/">![Slack][badge.slack]</a>
 
 > High performance Bitcoin development platform.
